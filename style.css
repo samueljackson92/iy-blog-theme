@@ -26,6 +26,7 @@ cite {font-size: 8pt; float: right; padding-right: 10px; color: #888;}
 
 body {min-height: 100%;background: url("img/tile.png") repeat;}
 #content small {color: #888; font-size: 8pt;}
+#content small p {color: #888; font-size: 8pt;}
 
 .textbox {padding: 10px; font-size: 12pt; border: 1px solid #aaa; display: inline; width: 305px;}
 input {
@@ -44,13 +45,13 @@ form {padding: 10px;}
 #header, #footer {text-align: center;}
 
 #header h1 {font-family: font-family: 'Roboto Slab', serif; margin-bottom: 10px;}
+#tagline {font-style: italic; margin-bottom: 10px;}
+.nav-list {text-align: center; width: 500px;}
+.nav-list li {display: inline;}
 
-#header .nav-list {text-align: center; width: 500px;}
-#header .nav-list li {display: inline;}
-
-#header #nav-bar ul li {padding: 10px;}
-#header #social-bar ul {margin-top: 15px;}
-#header #social-bar ul li {margin: 0 auto;display:inline; padding: 5px;}
+#nav-bar ul li {padding: 10px; display: inline;}
+#social-bar ul {margin-top: 15px;}
+#social-bar ul li {margin: 0 auto;display:inline; padding: 5px;}
 
 
 #content-wrap {}
@@ -77,8 +78,10 @@ form {padding: 10px;}
 
 .comment hr {padding-top:  15px;}
 .comment small {display: block; text-align: center;float: none;}
+.comment img {float: left; padding: 10px; display: block;}
+.comment-content {min-height: 80px;}
 
-#footer {background: #dcdcdc; color: #5c5c5c; padding: 10px;
+#footer { background: #eee url("img/footer.jpg") no-repeat; color: #5c5c5c; padding: 10px;
 -moz-border-radius-bottomright: 10px;
 border-bottom-right-radius: 10px;
 
@@ -86,8 +89,16 @@ border-bottom-right-radius: 10px;
 border-bottom-left-radius: 10px;
 }
 
+input[type=submit]:active {background: #aaa;}
 .button {background: #eee;}
 .button:active {background: #aaa;}
+
+
+.two-column {overflow: hidden; padding-bottom: 10px;}
+.two-column ul {list-style: square; list-style-position: inside; padding-left: 10px;}
+.left {float: left;}
+.right{float: right;}
+.center-box {text-align: center;}
 
 /* Pagination */
 

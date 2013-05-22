@@ -1,15 +1,24 @@
-<?php 
-/*
-	Default page for the blog. 
-	Shows all posts with pagination.
-
-	Author: Samuel Jackson
-	Date: 2013-05-21
-*/
+<?php
+/**
+ * The template for displaying Archive pages.
+ * Used to display archive-type pages for posts in a specifc date range.
+ *
+ */
 
 get_header(); ?>
 <div id="blog-content">
-
+	<?php
+		$title = "";
+		if(single_month_title("", false) == "") {
+			$title = "Tag: " . single_tag_title(" ", false);
+		} else {
+			$title = "Month: " . single_month_title(" ", false);
+		}
+	?>
+	<hr />
+	<h2><?php echo $title; ?></h2>
+	<?php $page = get_page_by_title("archive");?>
+	<p><a href="<?php echo get_page_link($page->ID); ?>">&laquo; Back to Archive</a></p>
 	<!--START of wordpress post loop -->
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>	
 		<div class="post">

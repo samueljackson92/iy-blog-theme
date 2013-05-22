@@ -12,10 +12,13 @@
     <ol>  
     <?php foreach($comments as $comment) : ?> 
         <li class="comment" id="comment-<?php comment_ID(); ?>">  
-            <?php if ($comment->comment_approved == '0') : ?>  
-                <small>Your comment is awaiting approval</small>  
-            <?php endif; ?>  
-            <?php comment_text(); ?>  
+            <div class="comment-content">
+                <?php if ($comment->comment_approved == '0') : ?>  
+                    <small>Your comment is awaiting approval</small>  
+                <?php endif; ?>  
+                <?php echo get_avatar($comment, 60); ?> 
+                <?php comment_text(); ?>
+            </div>
             <cite><?php comment_type(); ?> by <?php comment_author_link(); ?> on <?php comment_date(); ?> at <?php comment_time(); ?></cite>  
             <hr />
         </li>  
