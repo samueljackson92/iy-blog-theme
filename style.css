@@ -20,8 +20,8 @@ h4, legend {font-size: 12pt;}
 hr {width: 80%;  border: 0;
     border-bottom: 1px dashed #ccc;}
 
-a {color: inherit;}
-h1 a, h2 a {text-decoration: none;}
+a {color: #500;}
+h1 a, h2 a, h3 a {text-decoration: none; color: inherit;}
 cite {font-size: 8pt; float: right; padding-right: 10px; color: #888;}
 
 body {min-height: 100%;background: url("img/tile.png") repeat;}

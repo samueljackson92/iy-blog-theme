@@ -17,9 +17,7 @@ get_header(); ?>
 			<hr />
 			<h2 class="post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 			<small><?php the_time('F jS, Y') ?></small>
-			<small><?php
-echo get_the_tag_list('<p>Tags: ',', ','</p>');
-?></small>
+			<small><?php echo get_the_tag_list('<p>Tags: ',', ','</p>'); ?></small>
 			<div class="entry">
 				<?php the_content(); ?>
 			</div>
