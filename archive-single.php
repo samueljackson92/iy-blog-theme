@@ -6,13 +6,11 @@
 
 get_header(); ?>
 <div id="blog-content" class="single">
-	<div>
-        </div>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<div class="post">
 			<hr />
-			<h2><?php get_the_title(); ?></h2>
 			<div class="center-box" id="search-box">
+				<h2><?php echo get_the_title(); ?></h2>
 				<?php get_search_form(); ?>
 			</div>
 			<hr />

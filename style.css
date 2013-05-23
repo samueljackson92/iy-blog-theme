@@ -24,6 +24,25 @@ a {color: #500;}
 h1 a, h2 a, h3 a {text-decoration: none; color: inherit;}
 cite {font-size: 8pt; float: right; padding-right: 10px; color: #888;}
 
+li {padding: 3px;}
+ul, ol {margin: 5px; padding-left: 10px; list-style-position: inside;}
+
+ol {list-style-type: decimal;}
+ol ol {margin: 0px; list-style-type: lower-alpha;}
+ol ol ol {margin: 0px; list-style-type: lower-roman;}
+
+ul {list-style-type: square;}
+ul ul {margin: 0px; list-style-type: circle;}
+ul ul ul {margin: 0px; list-style-type: disc;}
+
+table {margin: 5px; margin: 0 auto;}
+table td, table th {padding: 10px; border: 1px dashed #ccc;}
+table thead {font-weight: bold;}
+
+pre {display: block; margin: 10px 0px 10px 0px; background: #ddd; padding: 10px; font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;}
+blockquote {padding: 10px; text-align: center; font-size: 12pt; background: #eee; border-top: 1px dashed #ccc; border-bottom: 1px dashed #ccc;}
+.post blockquote p small {font-size: 12pt;}
+
 body {min-height: 100%;background: url("img/tile.png") repeat;}
 #content small {color: #888; font-size: 8pt;}
 #content small p {color: #888; font-size: 8pt;}
@@ -73,9 +92,10 @@ form {padding: 10px;}
 
 #blog-content {padding: 10px;}
 .post {margin-bottom:  20px;}
-.post p {color: #1c1c1c;}
-.post blockquote p {font-style: italic; color: #888;}
+.post {color: #1c1c1c;}
+.post blockquote p {font-style: italic; color: #666;}
 
+.comment {list-style-type: none;}
 .comment hr {padding-top:  15px;}
 .comment small {display: block; text-align: center;float: none;}
 .comment img {float: left; padding: 10px; display: block;}
@@ -104,3 +124,5 @@ input[type=submit]:active {background: #aaa;}
 
 #pagination {text-align: center;}
 #pagination a {padding: 5px;}
+
+.gist {font-size: 8pt;}
