@@ -39,8 +39,8 @@ table {margin: 5px; margin: 0 auto;}
 table td, table th {padding: 10px; border: 1px dashed #ccc;}
 table thead {font-weight: bold;}
 
-pre {display: block; margin: 10px 0px 10px 0px; background: #ddd; padding: 10px; font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;}
-blockquote {padding: 10px; text-align: center; font-size: 12pt; background: #eee; border-top: 1px dashed #ccc; border-bottom: 1px dashed #ccc;}
+pre {display: block; margin: 10px 0px 10px 0px; background: #eee; padding: 10px; font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;}
+blockquote {margin: 5px;padding: 10px; text-align: center; font-size: 12pt; background: #efefef; border-top: 1px dashed #ccc; border-bottom: 1px dashed #ccc;}
 .post blockquote p small {font-size: 12pt;}
 
 body {min-height: 100%;background: url("img/tile.png") repeat;}
@@ -65,7 +65,7 @@ form {padding: 10px;}
 
 #header h1 {font-family: font-family: 'Roboto Slab', serif; margin-bottom: 10px;}
 #tagline {font-style: italic; margin-bottom: 10px;}
-.nav-list {text-align: center; width: 500px;}
+.nav-list {text-align: center; width: 500px; padding: 0px; margin: 0px;}
 .nav-list li {display: inline;}
 
 #nav-bar ul li {padding: 10px; display: inline;}
@@ -111,6 +111,7 @@ border-bottom-left-radius: 10px;
 
 input[type=submit]:active {background: #aaa;}
 .button {background: #eee;}
+.button:hover {background: #dedede;}
 .button:active {background: #aaa;}
 
 
@@ -126,3 +127,5 @@ input[type=submit]:active {background: #aaa;}
 #pagination a {padding: 5px;}
 
 .gist {font-size: 8pt;}
+.gist table {margin: 0; border: 0;}
+.gist table td {border: 0;}

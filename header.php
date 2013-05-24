@@ -19,10 +19,17 @@
 					</div>
 					<div id="social-bar">
 						<ul class="nav-list">
-							<li><a href="http://www.twitter.com/sljack92"><img src="<?php echo get_bloginfo('template_url') ?>/img/Twitter.png"></a></li>
-							<li><a href="http://www.github.com/samueljackson92"><img src="<?php echo get_bloginfo('template_url') ?>/img/GitHub.png"></a></li>
-							<li><a href="http://www.linkedin.com/profile/view?id=190645648&trk=tab_pro"><img src="<?php echo get_bloginfo('template_url') ?>/img/LinkedIn.png"></a></li>
-							<li><a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php echo get_bloginfo('template_url') ?>/img/RSS.png"></a></li>
+							<?php
+								$urls = get_option("social_icons");
+								$size = get_option("social_icons_size");
+								foreach ($urls as $key => $url) {
+									if($url != "") {
+							?>
+							<li><a href="<?php echo $url; ?>"><img src="<?php echo get_bloginfo('template_url') ?>/img/icons/<?php echo $size;?>/<?php echo $key; ?>.png"></a></li>
+							<?php
+									}
+								}
+							?>
 						</ul>
 					</div>
 				</div>
